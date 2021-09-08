@@ -2,7 +2,7 @@
 
 __OzCart__ is a simple e-commerce app.
 
-Through the app, users can:- 
+## Through the app, users can:- 
 
 - Sign up
 - Sign in
@@ -20,3 +20,10 @@ Through the app, users can:-
 - Vew previous orders
 - Be recommended products based on their vewing habits
 - Search products by name or some other property.
+
+## Admins will be able to:-
+- View/Disable/Enable user accounts
+- View/Add/Update/Delete products
+- View/Update a user's order
+- View all product sales by month
+- View all orders by month
