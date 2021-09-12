@@ -39,4 +39,5 @@ final theme = ThemeData(
   accentColor: accentColor,
   primaryColor: primaryColor,
   textTheme: _textTheme,
+  visualDensity: VisualDensity.adaptivePlatformDensity,
 );
