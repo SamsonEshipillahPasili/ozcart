@@ -7,19 +7,15 @@ __OzCart__ is a simple e-commerce app.
 - Sign up
 - Sign in
 - Browse the available products by category
-- Put products on their wish list
-- Like/Dislike a product
-- Put products on the cart (in addition to the quantities)
+- Put products on the cart
 - Clear their cart
 - View the cart
 - Remove an item from the cart.
 - Update the item qty in the cart.
 - Place an order from the cart (and pay via MPESA)
 - View order progress
-- Cancel an order
-- Vew previous orders
-- Be recommended products based on their vewing habits
-- Search products by name or some other property.
+- View previous orders
+- Search products by keyword
 
 ## Admins will be able to:-
 - View/Disable/Enable user accounts
