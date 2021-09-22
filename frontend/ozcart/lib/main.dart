@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ozcart/screens/login_screen.dart';
+import 'package:ozcart/screens/register_screen.dart';
 import 'package:ozcart/theme/theme.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: LoginScreen(),
+      home: RegisterScreen(),
       title: 'OzCart',
     );
   }

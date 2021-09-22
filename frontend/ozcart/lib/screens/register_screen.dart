@@ -3,7 +3,7 @@ import 'package:ozcart/components/oz_input_field.dart';
 import 'package:ozcart/components/oz_password_field.dart';
 import 'package:ozcart/components/primary_button.dart';
 
-class LoginScreen extends StatelessWidget {
+class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 56),
               Center(
                 child: Text(
-                  'Login',
+                  'Register',
                   style: Theme.of(context).textTheme.headline1,
                 ),
               ),
@@ -29,18 +29,15 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 37),
               OzPasswordField(),
               SizedBox(height: 37),
-              OzPrimaryButton(text: "Login"),
+              OzPrimaryButton(text: "Register"),
               SizedBox(height: 59),
               Center(
-                child: GestureDetector(
+                child: InkWell(
                   onTap: () {},
-                  child: Text(
-                    "Don't have an account? Register",
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ),
+                  child: Text("Already have an account? Login"),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 59),
             ],
           ),
         ),

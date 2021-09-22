@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class OzPrimaryButton extends StatelessWidget {
+  final String text;
+
+  const OzPrimaryButton({Key? key, required this.text}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -13,7 +17,7 @@ class OzPrimaryButton extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            "Login",
+            text,
             style: TextStyle(color: Colors.white, fontSize: 14),
           ),
         ),
