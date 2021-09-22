@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:ozcart/components/oz_input_field.dart';
 import 'package:ozcart/components/oz_password_field.dart';
 import 'package:ozcart/components/primary_button.dart';
+import 'package:ozcart/screens/register_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -32,8 +34,10 @@ class LoginScreen extends StatelessWidget {
               OzPrimaryButton(text: "Login"),
               SizedBox(height: 59),
               Center(
-                child: GestureDetector(
-                  onTap: () {},
+                child: InkWell(
+                  onTap: () {
+                    Get.off(RegisterScreen());
+                  },
                   child: Text(
                     "Don't have an account? Register",
                     style: Theme.of(context).textTheme.bodyText1,
