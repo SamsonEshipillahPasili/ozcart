@@ -38,6 +38,7 @@ final _textTheme = TextTheme(
 final theme = ThemeData(
   accentColor: accentColor,
   primaryColor: primaryColor,
+  hintColor: primaryColor,
   textTheme: _textTheme,
   visualDensity: VisualDensity.adaptivePlatformDensity,
 );
