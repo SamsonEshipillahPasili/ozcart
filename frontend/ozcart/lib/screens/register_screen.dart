@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ozcart/components/oz_input_field.dart';
 import 'package:ozcart/components/oz_password_field.dart';
-import 'package:ozcart/components/primary_button.dart';
+import 'package:ozcart/components/oz_primary_button.dart';
 import 'package:ozcart/screens/login_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
