@@ -43,6 +43,10 @@ class ProductsScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.shopping_cart_outlined),
+      ),
     );
   }
 }
