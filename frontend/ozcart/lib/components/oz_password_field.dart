@@ -27,7 +27,7 @@ class _OzPasswordFieldState extends State<OzPasswordField> {
         fillColor: Color(0xFFF2F1F8),
         hintText: 'Enter your password',
         hintStyle: Theme.of(context).textTheme.bodyText1,
-        suffix: GestureDetector(
+        suffixIcon: GestureDetector(
           onTap: () {
             setState(() {
               visibilityOff = !visibilityOff;
@@ -35,6 +35,7 @@ class _OzPasswordFieldState extends State<OzPasswordField> {
           },
           child: Icon(
             visibilityOff ? Icons.visibility_off : Icons.visibility,
+            color: Theme.of(context).primaryColor,
             size: 18,
           ),
         ),
