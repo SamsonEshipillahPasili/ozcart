@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ozcart/screens/categories_view.dart';
+import 'package:ozcart/screens/order_history_screen.dart';
 import 'package:ozcart/screens/products_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final _homeScreens = [
     ProductsScreen(),
     CategoriesScreen(),
-    Center(child: Text('Hi')),
+    OrderHistoryScreen(),
     Center(child: Text('Hi')),
   ];
 
