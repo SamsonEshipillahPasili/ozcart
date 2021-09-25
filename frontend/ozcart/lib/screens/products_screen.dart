@@ -8,12 +8,14 @@ class ProductsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Products'),
       ),
-      body: Padding(
+      body: Container(
         padding: EdgeInsets.symmetric(horizontal: 16),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             SizedBox(height: 25),
             OzSearchField(),
@@ -25,9 +27,15 @@ class ProductsScreen extends StatelessWidget {
               ),
               alignment: Alignment.centerLeft,
             ),
-            SizedBox(height: 57),
-            OzProduct(),
-            OzNothingFound(),
+            SizedBox(height: 37),
+            Expanded(
+              child: GridView.count(
+                crossAxisCount: 2,
+                crossAxisSpacing: 30,
+                mainAxisSpacing: 30,
+                children: List.generate(10, (index) => OzProduct()),
+              ),
+            ),
           ],
         ),
       ),

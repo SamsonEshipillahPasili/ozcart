@@ -5,12 +5,13 @@ class OzProduct extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {},
-      child: Ink(
+      child: Container(
         height: 170,
         width: 152,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
-          border: Border.all(color: Theme.of(context).primaryColor),
+          border: Border.all(color: Colors.black.withOpacity(0.3)),
+          color: Colors.white,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
