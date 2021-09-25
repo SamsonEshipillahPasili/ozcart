@@ -17,22 +17,36 @@ class ProductsScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            SizedBox(height: 25),
-            OzSearchField(),
-            SizedBox(height: 37),
-            Align(
-              child: Text(
-                'View products',
-                style: Theme.of(context).textTheme.bodyText1,
+            Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(color: Colors.black.withOpacity(0.3)),
+                ),
               ),
-              alignment: Alignment.centerLeft,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  SizedBox(height: 25),
+                  OzSearchField(),
+                  SizedBox(height: 37),
+                  Align(
+                    child: Text(
+                      'View products',
+                      style: Theme.of(context).textTheme.bodyText1,
+                    ),
+                    alignment: Alignment.centerLeft,
+                  ),
+                  SizedBox(height: 10),
+                ],
+              ),
             ),
-            SizedBox(height: 37),
+            // todo:  SizedBox(height: 50),
+            // todo: OzNothingFound(),
             Expanded(
               child: GridView.count(
                 crossAxisCount: 2,
-                crossAxisSpacing: 30,
-                mainAxisSpacing: 30,
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 10,
                 children: List.generate(10, (index) => OzProduct()),
               ),
             ),
