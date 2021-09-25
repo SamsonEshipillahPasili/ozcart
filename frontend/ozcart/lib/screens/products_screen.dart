@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ozcart/components/oz_nothing_found.dart';
 import 'package:ozcart/components/oz_product.dart';
 import 'package:ozcart/components/oz_search_field.dart';
 import 'package:ozcart/theme/palette.dart';
@@ -26,22 +27,7 @@ class ProductsScreen extends StatelessWidget {
             ),
             SizedBox(height: 57),
             OzProduct(),
-            Container(
-              height: 117,
-              width: 211,
-              child: Center(
-                child: Image.asset('assets/no_product.png'),
-              ),
-              decoration: BoxDecoration(
-                color: lightGrey,
-                borderRadius: BorderRadius.all(Radius.circular(20)),
-              ),
-            ),
-            SizedBox(height: 22),
-            Text(
-              "No products found",
-              style: Theme.of(context).textTheme.headline5,
-            )
+            OzNothingFound(),
           ],
         ),
       ),
