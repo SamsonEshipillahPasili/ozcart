@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ozcart/screens/categories_view.dart';
 import 'package:ozcart/screens/products_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -10,7 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var _currentIndex = 0;
   final _homeScreens = [
     ProductsScreen(),
-    Center(child: Text('Hi')),
+    CategoriesScreen(),
     Center(child: Text('Hi')),
     Center(child: Text('Hi')),
   ];
