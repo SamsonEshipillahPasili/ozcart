@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ozcart/components/oz_product.dart';
 import 'package:ozcart/components/oz_search_field.dart';
 import 'package:ozcart/theme/palette.dart';
 
@@ -24,6 +25,7 @@ class ProductsScreen extends StatelessWidget {
               alignment: Alignment.centerLeft,
             ),
             SizedBox(height: 57),
+            OzProduct(),
             Container(
               height: 117,
               width: 211,
