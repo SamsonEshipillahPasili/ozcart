@@ -12,18 +12,18 @@ class OzPrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Ink(
-        height: 47,
-        decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Center(
-          child: Text(
-            text,
-            style: TextStyle(color: Colors.white, fontSize: 14),
+    return Material(
+      color: Theme.of(context).primaryColor,
+      borderRadius: BorderRadius.circular(10),
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          height: 47,
+          child: Center(
+            child: Text(
+              text,
+              style: TextStyle(color: Colors.white, fontSize: 14),
+            ),
           ),
         ),
       ),

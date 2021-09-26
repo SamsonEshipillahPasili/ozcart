@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:ozcart/components/oz_nothing_found.dart';
 import 'package:ozcart/components/oz_product.dart';
 import 'package:ozcart/components/oz_search_field.dart';
+import 'package:ozcart/screens/cart_screens/cart_screen.dart';
 import 'package:ozcart/theme/palette.dart';
 
 class ProductsScreen extends StatelessWidget {
@@ -54,7 +56,7 @@ class ProductsScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Get.to(() => CartScreen()),
         child: Icon(Icons.shopping_cart_outlined),
       ),
     );
