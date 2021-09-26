@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ozcart/theme/palette.dart';
 
 class OzNothingFound extends StatelessWidget {
+  final String title;
+
+  const OzNothingFound({Key? key, required this.title}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,7 +23,7 @@ class OzNothingFound extends StatelessWidget {
         ),
         SizedBox(height: 22),
         Text(
-          "No products found",
+          title,
           style: Theme.of(context).textTheme.headline5,
         )
       ],
