@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ozcart/screens/categories_view.dart';
+import 'package:ozcart/screens/my_account_screen.dart';
 import 'package:ozcart/screens/order_history_screen.dart';
 import 'package:ozcart/screens/products_screen.dart';
 
@@ -14,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ProductsScreen(),
     CategoriesScreen(),
     OrderHistoryScreen(),
-    Center(child: Text('Hi')),
+    MyAccountScreen(),
   ];
 
   void _onNavigate(int index) {
