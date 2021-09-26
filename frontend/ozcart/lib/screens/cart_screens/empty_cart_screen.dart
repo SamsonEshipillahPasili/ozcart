@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:ozcart/components/oz_nothing_found.dart';
 import 'package:ozcart/components/oz_primary_button.dart';
 
@@ -17,14 +18,23 @@ class EmptyCartScreen extends StatelessWidget {
           Container(
             width: 174,
             child: OzPrimaryButton(
-              onTap: () {},
+              onTap: () => Get.back(),
               text: 'Continue Shopping',
             ),
           ),
           Expanded(
             child: Align(
               alignment: Alignment.bottomCenter,
-              child: OzCartAction(),
+              child: OzCartAction(
+                onOrder: () => {
+                  Get.snackbar(
+                    'Empty Cart',
+                    'Your cart is empty. Add items to the cart and then place your order.',
+                    colorText: Colors.white,
+                    backgroundColor: Colors.black.withOpacity(0.8),
+                  )
+                },
+              ),
             ),
           ),
         ],

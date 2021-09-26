@@ -3,6 +3,10 @@ import 'package:ozcart/components/oz_primary_button.dart';
 import 'package:ozcart/theme/palette.dart';
 
 class OzCartAction extends StatelessWidget {
+  final VoidCallback onOrder;
+
+  const OzCartAction({Key? key, required this.onOrder}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +29,7 @@ class OzCartAction extends StatelessWidget {
             alignment: Alignment.centerLeft,
           ),
           SizedBox(height: 17),
-          OzPrimaryButton(text: 'Order Now', onTap: () {}),
+          OzPrimaryButton(text: 'Order Now', onTap: onOrder),
         ],
       ),
     );
