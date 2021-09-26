@@ -27,11 +27,13 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 62),
-              OzInputField(),
+              OzInputField(
+                hintText: 'Enter your email',
+              ),
               SizedBox(height: 37),
               OzPasswordField(),
               SizedBox(height: 37),
-              OzPrimaryButton(text: "Register"),
+              OzPrimaryButton(text: "Register", onTap: () {}),
               SizedBox(height: 59),
               Center(
                 child: InkWell(

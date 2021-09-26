@@ -13,6 +13,7 @@ class OzAccountInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: EdgeInsets.zero,
       title: Text(
         heading,
         style: Theme.of(context)

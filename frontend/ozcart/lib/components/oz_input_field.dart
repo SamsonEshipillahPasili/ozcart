@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:ozcart/theme/palette.dart';
 
 class OzInputField extends StatelessWidget {
+  final String hintText;
+  final TextInputType keyboardType;
+
+  const OzInputField({
+    Key? key,
+    required this.hintText,
+    this.keyboardType = TextInputType.text,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -18,9 +27,10 @@ class OzInputField extends StatelessWidget {
         ),
         filled: true,
         fillColor: Color(0xFFF2F1F8),
-        hintText: 'Enter your email',
+        hintText: hintText,
         hintStyle: Theme.of(context).textTheme.bodyText1,
       ),
+      keyboardType: keyboardType,
     );
   }
 }
