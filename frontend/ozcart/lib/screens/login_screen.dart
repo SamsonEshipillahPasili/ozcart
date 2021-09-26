@@ -27,11 +27,16 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 62),
-              OzInputField(),
+              OzInputField(
+                hintText: 'Enter your email',
+              ),
               SizedBox(height: 37),
               OzPasswordField(),
               SizedBox(height: 37),
-              OzPrimaryButton(text: "Login"),
+              OzPrimaryButton(
+                text: "Login",
+                onTap: () {},
+              ),
               SizedBox(height: 59),
               Center(
                 child: InkWell(

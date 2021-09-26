@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 
 class OzPrimaryButton extends StatelessWidget {
   final String text;
+  final VoidCallback onTap;
 
-  const OzPrimaryButton({Key? key, required this.text}) : super(key: key);
+  const OzPrimaryButton({
+    Key? key,
+    required this.text,
+    required this.onTap,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: onTap,
       child: Ink(
         height: 47,
         decoration: BoxDecoration(
