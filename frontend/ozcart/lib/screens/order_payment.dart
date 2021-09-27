@@ -6,8 +6,6 @@ import 'package:ozcart/theme/palette.dart';
 class OrderPayment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final fieldSpacer = SizedBox(height: 34);
-
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(title: Text('Order - Payment')),
