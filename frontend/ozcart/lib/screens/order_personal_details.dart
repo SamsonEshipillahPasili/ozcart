@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:ozcart/components/oz_input_field.dart';
 import 'package:ozcart/components/oz_primary_button.dart';
+import 'package:ozcart/screens/pickup_station.dart';
 
 class OrderPersonalDetails extends StatelessWidget {
   @override
@@ -11,7 +13,7 @@ class OrderPersonalDetails extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Order Personal Details'),
+        title: Text('Order - Personal Details'),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 27),
@@ -35,7 +37,11 @@ class OrderPersonalDetails extends StatelessWidget {
               keyboardType: TextInputType.phone,
             ),
             fieldSpacer,
-            OzPrimaryButton(text: 'Continue', onTap: () {}),
+            OzPrimaryButton(
+                text: 'Continue',
+                onTap: () {
+                  Get.to(() => PickupStation());
+                }),
           ],
         ),
       ),
