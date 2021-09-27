@@ -1,8 +1,10 @@
 import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:ozcart/components/oz_dropdown.dart';
 import 'package:ozcart/components/oz_input_field.dart';
 import 'package:ozcart/components/oz_primary_button.dart';
+import 'package:ozcart/screens/order_payment.dart';
 
 // https://pub.dev/packages/dropdown_plus
 
@@ -25,7 +27,10 @@ class PickupStation extends StatelessWidget {
             fieldSpacer,
             OzDropDown(label: 'Select your pickup station'),
             fieldSpacer,
-            OzPrimaryButton(text: 'Continue', onTap: () {}),
+            OzPrimaryButton(
+              text: 'Continue',
+              onTap: () => Get.to(() => OrderPayment()),
+            ),
           ],
         ),
       ),
