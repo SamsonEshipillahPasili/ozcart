@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class OzCartProduct extends StatelessWidget {
+  final bool deletable;
+
+  const OzCartProduct({Key? key, this.deletable = true}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -8,13 +12,15 @@ class OzCartProduct extends StatelessWidget {
         leading: Image.asset('assets/cup_3.png'),
         title: Text('DKANR JUG'),
         subtitle: Text('KSH. 15,995'),
-        trailing: IconButton(
-          icon: Icon(
-            Icons.delete_outlined,
-            color: Theme.of(context).accentColor,
-          ),
-          onPressed: () {},
-        ),
+        trailing: deletable
+            ? IconButton(
+                icon: Icon(
+                  Icons.delete_outlined,
+                  color: Theme.of(context).accentColor,
+                ),
+                onPressed: () {},
+              )
+            : null,
       ),
     );
   }
