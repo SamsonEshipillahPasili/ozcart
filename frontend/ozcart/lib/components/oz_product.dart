@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ozcart/screens/product_detail_screen.dart';
 
 class OzProduct extends StatelessWidget {
   @override
@@ -6,7 +8,7 @@ class OzProduct extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: 15),
       child: InkWell(
-        onTap: () {},
+        onTap: () => Get.to(() => ProductDetailsScreen()),
         child: Container(
           height: 170,
           width: 152,

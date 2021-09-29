@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: theme,
-      home: OrderPlacedScreen(),
+      home: HomeScreen(),
       title: 'OzCart',
     );
   }
