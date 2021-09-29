@@ -4,6 +4,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:ozcart/screens/edit_account_screen.dart';
 import 'package:ozcart/screens/home_screen.dart';
 import 'package:ozcart/screens/login_screen.dart';
+import 'package:ozcart/screens/order_placed_screen.dart';
 import 'package:ozcart/screens/product_detail_screen.dart';
 import 'package:ozcart/screens/register_screen.dart';
 import 'package:ozcart/screens/splash_screen.dart';
@@ -18,7 +19,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: theme,
-      home: ProductDetailsScreen(),
+      home: OrderPlacedScreen(),
       title: 'OzCart',
     );
   }
