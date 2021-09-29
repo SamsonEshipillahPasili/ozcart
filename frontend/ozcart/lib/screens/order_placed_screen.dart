@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ozcart/components/oz_primary_button.dart';
+import 'package:ozcart/screens/home_screen.dart';
 import 'package:ozcart/theme/palette.dart';
 
 class OrderPlacedScreen extends StatelessWidget {
@@ -52,6 +55,11 @@ class OrderPlacedScreen extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            SizedBox(height: 42),
+            OzPrimaryButton(
+              text: 'Home',
+              onTap: () => Get.to(() => HomeScreen()),
             ),
           ],
         ),
